@@ -607,12 +607,41 @@ def main():
 
                 {content_guidelines}
                 
+                KEY INSTRUCTIONS FOR CONTENT FORMAT:
+                
+                1. DEFINE THE CONTENT STYLE BASED ON THE TOPIC:
+                   - If "{sanitized_topic}" is personal or leadership-focused → Use storytelling and real-life experiences
+                   - If "{sanitized_topic}" is trends or insights → Use sharp takes, backed by data and examples
+                   - If "{sanitized_topic}" is a big idea or future concept → Be thought-provoking, challenging norms
+                   - If "{sanitized_topic}" is a practical tip or framework → Make it actionable with clear steps
+                
+                2. START WITH A HOOK (FIRST LINE MUST GRAB ATTENTION):
+                   - Use bold statements, a thought-provoking question, or an unexpected fact
+                   - Example: "Most people get networking wrong. It's not about collecting contacts. It's about earning trust."
+                
+                3. BREAK THE CONTENT INTO EASY-TO-READ CHUNKS:
+                   - Avoid long paragraphs—use short, punchy sentences and line breaks
+                   - Add sub-bullets when explaining a point to improve clarity
+                
+                4. MAKE IT SOUND HUMAN (NOT ROBOTIC OR AI-GENERATED):
+                   - Write as if you're speaking to one person, not an audience
+                   - Inject personality—use wit, emotion, and relatable language
+                   - Example: Instead of "Networking is essential for career growth" → "The best opportunities don't come from job portals. They come from one unexpected conversation."
+                
+                5. ALWAYS PROVIDE A TAKEAWAY:
+                   - End with a strong insight, a challenge, or a call to action
+                   - Example: "If you don't have a personal brand yet, someone else will define your reputation for you. What's the one thing you want to be known for?"
+                
+                6. CONSIDER USING A STRONG CLOSING LINE FOR IMPACT:
+                   - "Food for thought."
+                   - "The game has changed. Have you?"
+                   - "Curious—what's your take?"
+                
                 PLATFORM-SPECIFIC GUIDANCE:
                 1. Length: 100-200 words 
                 2. Include data ONLY IF it fits the selected persona style ({selected_persona["data_use"]})
                 3. Structure the post with sufficient white space - never dense paragraphs
                 4. Include 1-2 relevant hashtags IF they fit the persona and tone (not forced)
-                5. Create a natural ending that invites engagement without sounding formulaic
                 
                 CRITICAL HUMANIZATION REQUIREMENTS:
                 1. Include at least one personal experience, opinion, or viewpoint that makes it feel like a real person wrote it
@@ -643,7 +672,7 @@ def main():
                 
                 PLATFORM-SPECIFIC GUIDANCE:
                 1. Length: Maximum 280 characters
-                2. Start with a punchy, attention-grabbing line that establishes the distinctive voice
+                2. Start with a POWERFUL HEADLINE that immediately grabs attention and invokes interest
                 3. Include a surprising insight that fits this specific persona's perspective
                 4. Include hashtags ONLY if they feel organic and authentic (max 1-2)
                 
@@ -1046,6 +1075,16 @@ def main():
                             
                             # Create a copy button that references the hidden content
                             st.markdown(get_copy_button_for_id(content_id), unsafe_allow_html=True)
+                        
+                        # Add WhatsApp image to Twitter tab
+                        st.markdown('<h3 class="platform-header" style="margin-top: 2rem;"><span class="platform-icon">🖼️</span> Twitter Image</h3>', unsafe_allow_html=True)
+                        
+                        with st.spinner("Creating Twitter image..."):
+                            # Use the same image generation logic as WhatsApp
+                            twitter_image = generate_image(topic, "whatsapp")  # Using WhatsApp image generation logic
+                            if twitter_image:
+                                st.image(twitter_image, use_container_width=True)
+                                st.markdown(get_download_link(twitter_image, "twitter_image.png", "Download Image"), unsafe_allow_html=True)
                         
                         st.markdown('</div>', unsafe_allow_html=True)
                     
