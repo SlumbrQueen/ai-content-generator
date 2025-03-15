@@ -1,82 +1,100 @@
-# Mandala Art Generator
+# AI Content Generator
 
-A Streamlit application that generates beautiful mandala art using OpenAI's DALL-E API.
+A Streamlit application that creates platform-optimized content for LinkedIn, Twitter (X), and WhatsApp based on your insights, using AI-powered text and image generation.
 
-## Live Demo
+![AI Content Generator](https://img.shields.io/badge/AI-Content%20Generator-blue)
+![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-FF4B4B)
+![OpenAI](https://img.shields.io/badge/Powered%20by-OpenAI-412991)
 
-You can access the deployed app at [Mandala Art Generator](https://mandala-art-generator.streamlit.app) (link will be active after deployment)
+## ✨ Features
 
-## Description
+- **Multi-Platform Content Generation**: Create optimized content for LinkedIn, Twitter, and WhatsApp in one go
+- **Persona-Based Content**: Choose from pre-defined personas or create your own custom persona
+- **Tone Selection**: Select from different tones to match your content style
+- **AI-Powered Visuals**: Generate custom images for LinkedIn Reels and WhatsApp posts using DALL-E
+- **Easy Copy & Download**: One-click copy for text content and download for images
 
-This application allows users to generate different styles of mandala art by providing a single word as inspiration. The app integrates with OpenAI's DALL-E to create beautiful mandalas inspired by the spiritual traditions of Buddhism and Hinduism.
+## 🚀 Live Demo
 
-## Features
+Access the live app: [AI Content Generator on Streamlit Cloud](https://ai-content-generator.streamlit.app/) (Link will be active once deployed)
 
-- Generate three types of mandala art:
-  - Black and White Mandala: Simple, elegant design
-  - Color Mandala: Vibrant, colorful version
-  - New Age Mandala: Modern interpretation with digital art elements
-- Single word input for inspiration
-- Secure API key input
-- Download generated images
+## 📱 Platform-Specific Content
 
-## Setup Instructions for Local Development
+- **LinkedIn**:
+  - Thoughtful, professional posts optimized for engagement
+  - 3-slide visual story for LinkedIn Reels with consistent visual style
 
-1. Clone this repository
-   ```bash
-   git clone https://github.com/YourUsername/mandala-art-generator.git
-   cd mandala-art-generator
-   ```
+- **Twitter (X)**:
+  - Punchy, high-engagement tweets under character limit
+  - Optimized for virality and engagement
 
-2. Create and activate a virtual environment:
-   ```bash
-   # On Windows
-   python -m venv venv
-   .\venv\Scripts\Activate.ps1
-   
-   # On Linux/Mac
-   python -m venv venv
-   source venv/bin/activate
-   ```
+- **WhatsApp**:
+  - Eye-catching image for instant sharing
+  - Conversational message with proper formatting for maximum readability
 
-3. Install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🛠️ Requirements
 
-4. Run the Streamlit app:
-   ```bash
-   streamlit run app.py
-   ```
-
-## Deployment on Streamlit Cloud
-
-This app is ready to be deployed on Streamlit Cloud:
-
-1. Fork or push this repository to your GitHub account
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Sign in with your GitHub account
-4. Click "New app"
-5. Select this repository, branch (main) and file (app.py)
-6. Deploy!
-
-Note: Users will need to provide their own OpenAI API key when using the deployed application.
-
-## Requirements
-
-- Python 3.10+
-- Streamlit
+- Python 3.7+
 - OpenAI API key
-- Git
+- Required packages (see requirements.txt)
 
-## Usage
+## 🔧 Installation & Local Development
 
-1. Enter your OpenAI API key in the sidebar
-2. Type a single word as inspiration
-3. Select the type of mandala you want to generate
-4. Click the "Generate Mandala" button
-5. Download the generated image if desired
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/ai-content-generator.git
+cd ai-content-generator
+```
 
-## Privacy Note
+2. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
 
-Your OpenAI API key is used only for the current session and is not stored permanently. 
+3. Run the Streamlit app:
+```bash
+streamlit run content_generator.py
+```
+
+## 🧙‍♂️ How to Use
+
+1. Enter your OpenAI API key in the sidebar (it's only used for the current session and not stored)
+2. Input your topic or insight (e.g., "AI in Healthcare," "Future of FinTech")
+3. Select a persona:
+   - Ogilvy-style storyteller
+   - Data-Driven Strategist
+   - Tech Visionary
+   - Savage Satirist
+   - Or create your own custom persona
+4. Choose your tone:
+   - Sarcastic
+   - Professional
+   - Casual
+5. Click "Generate Content"
+6. Copy the generated text content and download images for each platform
+
+## 🚀 Deployment on Streamlit Cloud
+
+This app is ready to be deployed on Streamlit Cloud. Simply:
+
+1. Fork this repository to your GitHub account
+2. Log in to [Streamlit Cloud](https://streamlit.io/cloud)
+3. Click "New app" and select this repository
+4. Set the main file path to `content_generator.py`
+5. Deploy!
+
+Note: You'll still need to provide your OpenAI API key when using the deployed app.
+
+## 🔒 Security Note
+
+Your OpenAI API key is only used for the current session and is not stored anywhere. All content generation happens through the OpenAI API directly.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👏 Acknowledgements
+
+- Built with [Streamlit](https://streamlit.io/)
+- Powered by [OpenAI's GPT and DALL-E](https://openai.com/)
+- Made with ❤️ for content creators and marketers 
