@@ -22,7 +22,7 @@ linkedin_style_guide = ""
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Content Generator",
+    page_title="AI Content Generator v2.0",
     page_icon="✨",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -336,7 +336,7 @@ def sanitize_text(text):
 def main():
     # App header
     st.markdown('<div class="app-header">', unsafe_allow_html=True)
-    st.markdown('<h1>✨ AI Content Generator</h1>', unsafe_allow_html=True)
+    st.markdown('<h1>✨ AI Content Generator v2.0</h1>', unsafe_allow_html=True)
     st.markdown('<p>Generate platform-optimized content for LinkedIn, Twitter, and WhatsApp</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
