@@ -1,78 +1,82 @@
-# ✨ Prompt Enhancer - Streamlit App
+# Mandala Art Generator
 
-A modern, user-friendly application to transform your basic ideas into powerful AI prompts. Built with Streamlit for a seamless web-based interface.
+A Streamlit application that generates beautiful mandala art using OpenAI's DALL-E API.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://prompt-enhancer.streamlit.app)
+## Live Demo
+
+You can access the deployed app at [Mandala Art Generator](https://mandala-art-generator.streamlit.app) (link will be active after deployment)
+
+## Description
+
+This application allows users to generate different styles of mandala art by providing a single word as inspiration. The app integrates with OpenAI's DALL-E to create beautiful mandalas inspired by the spiritual traditions of Buddhism and Hinduism.
 
 ## Features
 
-- **Modern UI**: Clean, Apple-inspired interface with Poppins font
-- **Persona Selection**: Choose from pre-defined AI roles (Techie, Content Genius, Teacher)
-- **Clarifying Questions**: Interactive process to improve your prompt
-- **Enhanced Prompts**: Optimized for AI models like GPT-4
-- **Copy to Clipboard**: Easily copy your enhanced prompt
-- **Open in ChatGPT**: Direct integration with ChatGPT
+- Generate three types of mandala art:
+  - Black and White Mandala: Simple, elegant design
+  - Color Mandala: Vibrant, colorful version
+  - New Age Mandala: Modern interpretation with digital art elements
+- Single word input for inspiration
+- Secure API key input
+- Download generated images
 
-## Requirements
+## Setup Instructions for Local Development
 
-- Python 3.6+
-- OpenAI API key
+1. Clone this repository
+   ```bash
+   git clone https://github.com/YourUsername/mandala-art-generator.git
+   cd mandala-art-generator
+   ```
 
-## Installation
+2. Create and activate a virtual environment:
+   ```bash
+   # On Windows
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   
+   # On Linux/Mac
+   python -m venv venv
+   source venv/bin/activate
+   ```
 
-1. Clone this repository:
-```bash
-git clone https://github.com/SlumbrQueen/Prompt-Enhancer.git
-cd Prompt-Enhancer
-```
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. Install required packages:
-```bash
-pip install -r requirements.txt
-```
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
 
-## Running the App
+## Deployment on Streamlit Cloud
 
-Simply run:
+This app is ready to be deployed on Streamlit Cloud:
 
-```bash
-streamlit run streamlit_app.py
-```
-
-The app will open in your default web browser.
-
-## Using the App
-
-1. Enter your OpenAI API key (required for the app to function)
-2. Choose a persona or define a custom AI role
-3. Fill in the prompt components:
-   - **Context**: Background information about your situation
-   - **AI Role**: What role the AI should assume
-   - **Task**: What you want the AI to do
-   - **Output Format**: How you want the response structured
-   - **Additional Notes** (optional): Any extra information
-
-4. Click "Generate Enhanced Prompt"
-
-5. If the app needs more information, it will ask clarifying questions
-   - Answer the questions and click "Submit Answers"
-
-6. View and use your enhanced prompt:
-   - Copy to clipboard
-   - Open directly in ChatGPT
-   - Reset to start over
-
-## Deploying on Streamlit Cloud
-
-This application is ready to be deployed on Streamlit Cloud:
-
-1. Fork this repository to your GitHub account
-2. Sign up for [Streamlit Cloud](https://streamlit.io/cloud)
-3. Create a new app, pointing to your forked repository
-4. Set the main file path to `streamlit_app.py`
+1. Fork or push this repository to your GitHub account
+2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
+3. Sign in with your GitHub account
+4. Click "New app"
+5. Select this repository, branch (main) and file (app.py)
+6. Deploy!
 
 Note: Users will need to provide their own OpenAI API key when using the deployed application.
 
+## Requirements
+
+- Python 3.10+
+- Streamlit
+- OpenAI API key
+- Git
+
+## Usage
+
+1. Enter your OpenAI API key in the sidebar
+2. Type a single word as inspiration
+3. Select the type of mandala you want to generate
+4. Click the "Generate Mandala" button
+5. Download the generated image if desired
+
 ## Privacy Note
 
-Your API key is used only for the current session and is not stored permanently. All processing is done securely via the OpenAI API. 
+Your OpenAI API key is used only for the current session and is not stored permanently. 
