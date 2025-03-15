@@ -610,10 +610,10 @@ def main():
                 KEY INSTRUCTIONS FOR CONTENT FORMAT:
                 
                 1. DEFINE THE CONTENT STYLE BASED ON THE TOPIC:
-                   - If "{sanitized_topic}" is personal or leadership-focused → Use storytelling and real-life experiences
-                   - If "{sanitized_topic}" is trends or insights → Use sharp takes, backed by data and examples
-                   - If "{sanitized_topic}" is a big idea or future concept → Be thought-provoking, challenging norms
-                   - If "{sanitized_topic}" is a practical tip or framework → Make it actionable with clear steps
+                   - If "{sanitized_topic}" is personal or leadership-focused -> Use storytelling and real-life experiences
+                   - If "{sanitized_topic}" is trends or insights -> Use sharp takes, backed by data and examples
+                   - If "{sanitized_topic}" is a big idea or future concept -> Be thought-provoking, challenging norms
+                   - If "{sanitized_topic}" is a practical tip or framework -> Make it actionable with clear steps
                 
                 2. START WITH A HOOK (FIRST LINE MUST GRAB ATTENTION):
                    - Use bold statements, a thought-provoking question, or an unexpected fact
@@ -626,7 +626,7 @@ def main():
                 4. MAKE IT SOUND HUMAN (NOT ROBOTIC OR AI-GENERATED):
                    - Write as if you're speaking to one person, not an audience
                    - Inject personality—use wit, emotion, and relatable language
-                   - Example: Instead of "Networking is essential for career growth" → "The best opportunities don't come from job portals. They come from one unexpected conversation."
+                   - Example: Instead of "Networking is essential for career growth" -> "The best opportunities don't come from job portals. They come from one unexpected conversation."
                 
                 5. ALWAYS PROVIDE A TAKEAWAY:
                    - End with a strong insight, a challenge, or a call to action
