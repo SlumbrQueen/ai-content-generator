@@ -31,6 +31,14 @@ st.set_page_config(
 # App styling
 st.markdown("""
 <style>
+    /* Import Poppins font from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    /* Set Poppins as the default font for everything */
+    html, body, [class*="css"], p, h1, h2, h3, h4, h5, h6, button, input, textarea, .stMarkdown, .stText, div {
+        font-family: 'Poppins', sans-serif !important;
+    }
+    
     .app-header {
         text-align: center;
         padding: 1.5rem 0;
